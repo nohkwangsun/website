@@ -3,10 +3,12 @@ reviewers:
 - bgrant0607
 - mikedanese
 title: What is Kubernetes?
+title: Kubernetes란 무엇인가?
 ---
 
 {% capture overview %}
 This page is an overview of Kubernetes.
+이 페이지는 Kubernetes의 개요입니다.
 {% endcapture %}
 
 {% capture body %}
@@ -14,20 +16,34 @@ Kubernetes is a portable, extensible open-source platform for managing
 containerized workloads and services, that facilitates both
 declarative configuration and automation. It has a large, rapidly
 growing ecosystem. Kubernetes services, support, and tools are widely available.
+Kubernetes는 간편하고, 컨테이너로된 작업들과 서비스를 관리하기 위한 확장 가능한 오픈소스 플랫폼입니다.
+이것들은 설정과 자동화 모두를 쉽게 만들어 줍니다. 또한 크고 신속하게 성장하는 에코시스템을 가지고 있습니다.
+Kubernetes의 서비스, 지원 그리고 도구들이 폭넓게 제공됩니다.
+
 
 Google open-sourced the Kubernetes project in 2014. Kubernetes builds upon
 a [decade and a half of experience that Google has with running
 production workloads at
 scale](https://research.google.com/pubs/pub43438.html), combined with
 best-of-breed ideas and practices from the community.
+구글은 2014년에 Kubernetes 프로젝트를 오픈소스화 했습니다.
+Kubernetes는 구글의 대규모 운영 환경에서 십년 반의 경험 위에서 발전되어 왔습니다.
+더불어 커뮤니티로 부터 최고의 아이디어와 사례들이 결합되어졌습니다.
+
 
 #### Why do I need Kubernetes and what can it do?
+#### 왜 나는 Kubernetes가 필요하고, Kubernetes는 무엇을 해줄 수 있을까?
 
 Kubernetes has a number of features. It can be thought of as:
 * a container platform
 * a microservices platform
 * a portable cloud platform
 and a lot more.
+Kubernetes에는 많은 기능들이 있습니다. 아래와 같은 것들을 생각할 수 있을 것입니다.:
+* 컨테이너 플래폼
+* 마이크로서비스 플랫폼
+* 포터블한 클라우드 플랫폼 등
+
 
 Kubernetes provides a **container-centric** management environment. It
 orchestrates computing, networking, and storage infrastructure on
@@ -35,8 +51,14 @@ behalf of user workloads. This provides much of the simplicity of
 Platform as a Service (PaaS) with the flexibility of Infrastructure as
 a Service (IaaS), and enables portability across infrastructure
 providers.
+Kubernetes는 컨테이너 중심의 관리 환경을 제공합니다.
+사용자의 워크로드를 대신하여 컴퓨팅, 네트워크, 저장소 인프라 환경을 조정합니다.
+이것들은 IaaS의 유연함을 갖추면서 PaaS의 매우 단순함을 제공합니다.
+그리고 인프라 제공업체 간의 이동을 가능하게 합니다.
+
 
 #### How is Kubernetes a platform?
+#### Kubernetes는 어떻게 플랫폼이 되는가?
 
 Even though Kubernetes provides a lot of functionality, there are
 always new scenarios that would benefit from new

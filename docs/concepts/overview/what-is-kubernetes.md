@@ -2,11 +2,11 @@
 approvers:
 - bgrant0607
 - mikedanese
-title: What is Kubernetes?
+title: Kubernetes란 무엇인가?
 ---
 
 {% capture overview %}
-This page is an overview of Kubernetes.
+이 페이지는 Kubernetes의 개요입니다.
 {% endcapture %}
 
 {% capture body %}

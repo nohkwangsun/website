@@ -1,6 +1,6 @@
 ---
 reviewers:
-- bprashanth
+- kwangsun
 title: Services
 ---
 
@@ -13,6 +13,7 @@ a problem: if some set of `Pods` (let's call them backends) provides
 functionality to other `Pods` (let's call them frontends) inside the Kubernetes
 cluster, how do those frontends find out and keep track of which backends are
 in that set?
+Kubernetes Pod는 언젠간 죽게되어 있다. 그것들은 생성된 후 한번 죽게 되면, 다시 살아나지 않는다. ReplicationController는 특별히 Pod를 동적으로 생성하고 파기합니다 (예 : 스케일 업 또는 다운할 때, 롤링 업데이트를 수행할 때). 각 Pod는 자체 IP주소를 갖지만, 이러한 IP주소도 시간이 지남에 따라 안정적 일 수는 없습니다.
 
 Enter `Services`.
 
